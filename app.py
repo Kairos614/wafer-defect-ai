@@ -20,8 +20,8 @@ DEFECT_CLASSES = metadata["defect_classes"]
 STAGE1_THRESHOLD = float(metadata.get("stage1_threshold", 0.5))
 
 core = ov.Core()
-stage1 = core.compile_model(core.read_model(str(IR_DIR / "stage1_binary.xml")), "CPU")
-stage2 = core.compile_model(core.read_model(str(IR_DIR / "stage2_pattern.xml")), "CPU")
+stage1 = core.compile_model(core.read_model(str(IR_DIR / "stage1.xml")),"CPU")
+stage2 = core.compile_model(core.read_model(str(IR_DIR / "stage2.xml")),"CPU")
 
 def preprocess(uploaded_image):
     img = np.array(uploaded_image.convert("RGB"))
