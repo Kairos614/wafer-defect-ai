@@ -1,0 +1,6 @@
+streamlit
+openvino
+opencv-python-headless
+numpy
+Pillow
+pandas
