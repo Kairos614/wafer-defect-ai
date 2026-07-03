@@ -1,0 +1,19 @@
+{
+  "img_size": 96,
+  "binary_classes": [
+    "Defect",
+    "Normal"
+  ],
+  "defect_classes": [
+    "Center",
+    "Donut",
+    "Edge-Loc",
+    "Edge-Ring",
+    "Loc",
+    "Near-full",
+    "Random",
+    "Scratch"
+  ],
+  "stage1_threshold": 0.24999999999999992,
+  "best_stage2_model": "MobileNetV2_lr1e-4_drop0.3"
+}
