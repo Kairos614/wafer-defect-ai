@@ -10,7 +10,7 @@ import streamlit as st
 import openvino as ov
 
 APP_DIR = Path(__file__).parent
-IR_DIR = APP_DIR / "openvino_ir"
+IR_DIR = APP_DIR / "models"
 with open(APP_DIR / "metadata.json", "r", encoding="utf-8") as f:
     metadata = json.load(f)
 
